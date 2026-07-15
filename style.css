@@ -141,3 +141,34 @@ footer {
     color: #555;
     font-size: 18px;
 }
+/* انیمیشن دکمه ها */
+
+button{
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+button:active{
+    transform:scale(0.93);
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.08);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+.correct{
+    animation:pulse .5s ease;
+}
