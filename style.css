@@ -170,5 +170,6 @@ button:active{
 }
 
 .correct{
+    background:#2ecc71 !important;
     animation:pulse .5s ease;
 }
