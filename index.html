@@ -2,137 +2,214 @@
 <html lang="fa" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مسابقه ریاضی پایه اول</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>مسابقه ریاضی پایه اول</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <h1>🎉 مسابقه ریاضی پایه اول 🎉</h1>
+<h1>🎉 مسابقه ریاضی پایه اول 🎉</h1>
 
-        <!-- نام دانش آموز -->
-        <div id="startPage">
+<div id="startPage">
 
-            <label class="title">
-                نام دانش‌آموز
-            </label>
+<h2>به بازی خوش آمدی 🌸</h2>
 
-            <input
-                type="text"
-                id="studentName"
-                placeholder="نام خود را وارد کنید">
+<label class="title">
 
-            <button id="startBtn">
-                شروع مسابقه
-            </button>
+نام دانش‌آموز
 
-        </div>
+</label>
 
-        <!-- صفحه بازی -->
-        <div id="gamePage" style="display:none;">
+<input
+type="text"
+id="studentName"
+placeholder="نام خود را وارد کنید">
 
-            <div class="info">
+<h3>
 
-                <div class="box">
-                    👧
-                    <span id="showName"></span>
-                </div>
+جنسیت را انتخاب کن
 
-                <div class="box">
-                    ⭐ امتیاز :
-                    <span id="score">۰</span>
-                </div>
+</h3>
 
-                <div class="box">
-                    📚 سؤال
-                    <span id="questionNumber">۱</span>
-                    از
-                    <span>۱۰</span>
-                </div>
+<div class="genderBox">
 
-            </div>
+<label class="gender">
 
-            <!-- سؤال -->
+<input
+type="radio"
+name="gender"
+value="girl"
+checked>
 
-            <div class="question">
+👧 دختر
 
-                عدد
+</label>
 
-                <span id="targetNumber">
-                    ۵
-                </span>
+<label class="gender">
 
-                را بساز.
+<input
+type="radio"
+name="gender"
+value="boy">
 
-            </div>
+👦 پسر
 
-            <!-- گزینه ها -->
+</label>
 
-            <div class="options">
+</div>
 
-                <button class="option" id="op1"></button>
+<button id="startBtn">
 
-                <button class="option" id="op2"></button>
+🚀 شروع مسابقه
 
-                <button class="option" id="op3"></button>
+</button>
 
-                <button class="option" id="op4"></button>
+</div>
 
-            </div>
+<div id="gamePage" style="display:none;">
 
-            <!-- پیام -->
+<div class="info">
 
-            <div id="message">
+<div class="box">
 
-            </div>
+<span id="avatar">
 
-            <button id="nextBtn">
-                سؤال بعدی ➜
-            </button>
+👧
 
-        </div>
+</span>
 
-        <!-- پایان مسابقه -->
+<span id="showName"></span>
 
-        <div id="finishPage" style="display:none;">
+</div>
 
-            <h2>
-                🎊 مسابقه تمام شد 🎊
-            </h2>
+<div class="box">
 
-            <h3 id="resultName"></h3>
+⭐ امتیاز
 
-            <h2>
-                امتیاز شما
-            </h2>
+<span id="score">
 
-            <h1 id="finalScore"></h1>
+۰
 
-            <button onclick="location.reload()">
-                بازی دوباره
-            </button>
+</span>
 
-        </div>
+</div>
 
-    </div>
+<div class="box">
 
-    <!-- طراح -->
+📚 سؤال
 
-    <footer>
+<span id="questionNumber">
 
-        🌸 طراح :
-        <strong>
-            مهندس مرضیه محمدی
-        </strong>
+۱
 
-    </footer>
+</span>
 
-    <script src="script.js"></script>
+از
+
+<span>
+
+۹
+
+</span>
+
+</div>
+
+</div>
+
+<div class="question">
+
+حاصل جمع در کدام گزینه برابر با
+
+<span id="targetNumber">
+
+۱
+
+</span>
+
+است؟
+
+</div>
+
+<div class="options">
+
+<button id="op1" class="option"></button>
+
+<button id="op2" class="option"></button>
+
+<button id="op3" class="option"></button>
+
+<button id="op4" class="option"></button>
+
+</div>
+
+<div id="message"></div>
+
+<button id="nextBtn">
+
+➡️ سؤال بعدی
+
+</button>
+
+</div>
+
+<div id="finishPage" style="display:none;">
+
+<h2>
+
+🎊 مسابقه تمام شد 🎊
+
+</h2>
+
+<div id="finishAvatar">
+
+👧
+
+</div>
+
+<h2 id="resultName"></h2>
+
+<h3>
+
+امتیاز شما
+
+</h3>
+
+<h1 id="finalScore"></h1>
+
+<div id="medal"></div>
+
+<button onclick="location.reload()">
+
+🔄 بازی دوباره
+
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+🌸 طراحی و برنامه‌نویسی
+
+<strong>
+
+مهندس مرضیه محمدی
+
+</strong>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 
