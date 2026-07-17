@@ -138,6 +138,9 @@ function checkAnswer(answer, button) {
         score++;
         correctSound.currentTime = 0;
         correctSound.play();
+        
+        createStars();
+        
 
         button.classList.add("correct");
 
