@@ -3,7 +3,8 @@ let score = 0;
 let questionCount = 1;
 let correctAnswer = 0;
 let totalQuestions = 10;
-
+const correctSound = new Audio("correct.m4a");
+const wrongSound = new Audio("wrong.m4a");
 
 // تبدیل عدد انگلیسی به فارسی
 function persianNumber(number) {
