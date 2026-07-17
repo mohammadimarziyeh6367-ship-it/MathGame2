@@ -26,8 +26,16 @@ function persianNumber(number) {
 // شروع بازی
 document.getElementById("startBtn").onclick = function () {
 
-    studentName = document.getElementById("studentName").value;
+    studentName = document.getElementById("studentName").value ;
+    let gender = document.querySelector('input[name="gender"]:checked').value;
 
+    if (gender === "boy") {
+    document.getElementById("avatar").innerHTML = "👦";
+    document.getElementById("finishAvatar").innerHTML = "👦";
+} else {
+    document.getElementById("avatar").innerHTML = "👧";
+    document.getElementById("finishAvatar").innerHTML = "👧";
+}
     if (studentName.trim() === "") {
         alert("لطفاً نام دانش‌آموز را وارد کنید");
         return;
