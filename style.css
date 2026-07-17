@@ -543,3 +543,24 @@ flex-direction:column;
 }
 
 }
+.star{
+position:fixed;
+font-size:40px;
+animation:starFly 1s linear forwards;
+pointer-events:none;
+z-index:9999;
+}
+
+@keyframes starFly{
+
+0%{
+transform:translateY(0) scale(0.5);
+opacity:1;
+}
+
+100%{
+transform:translateY(-200px) scale(2);
+opacity:0;
+}
+
+}
