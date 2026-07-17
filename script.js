@@ -3,6 +3,7 @@ let score = 0;
 let questionCount = 1;
 let correctAnswer = 0;
 let totalQuestions = 10;
+//صداها 
 const correctSound = new Audio("correct.m4a");
 const wrongSound = new Audio("wrong.m4a");
 
@@ -135,6 +136,8 @@ function checkAnswer(answer, button) {
     if (answer === correctAnswer) {
 
         score++;
+        correctSound.currentTime = 0;
+        correctSound.play();
 
         button.classList.add("correct");
 
@@ -146,6 +149,8 @@ function checkAnswer(answer, button) {
     else {
 
         button.classList.add("wrong");
+        wrongSound.currentTime = 0;
+        wrongSound.play();
 
         document.getElementById("message").innerHTML =
             "😊 دوباره تلاش کن";
