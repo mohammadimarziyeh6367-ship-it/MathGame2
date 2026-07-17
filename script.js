@@ -207,3 +207,28 @@ function finishGame() {
         persianNumber(totalQuestions);
 
 }
+function createStars(){
+
+for(let i=0;i<12;i++){
+
+let star=document.createElement("div");
+
+star.className="star";
+
+star.innerHTML="⭐";
+
+star.style.left=Math.random()*window.innerWidth+"px";
+
+star.style.top=(window.innerHeight-100)+"px";
+
+document.body.appendChild(star);
+
+setTimeout(()=>{
+
+star.remove();
+
+},1000);
+
+}
+
+}
